@@ -85,6 +85,7 @@ const setArticle = (article) => {
     urlIframe.src = article.url;
     urlIframe.width = "80%";
     urlIframe.height = "600px";
+    urlIframe.style = "background-color:white;";
 
 
 
