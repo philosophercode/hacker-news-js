@@ -74,7 +74,22 @@ const getTime = (time) => {
 }
 
 const setArticle = (article) => {
+    while (articleDiv.firstChild) {
+        articleDiv.removeChild(articleDiv.firstChild);
+    }
+    let liTitle = document.createElement("li");
+    liTitle.setAttribute('class', 'title');
+    liTitle.innerHTML = article.title;
 
+    let urlIframe = document.createElement("iframe");
+    urlIframe.src = article.url;
+    urlIframe.width = "80%";
+    urlIframe.height = "600px";
+
+
+
+    articleDiv.appendChild(liTitle);
+    articleDiv.appendChild(urlIframe);
 }
 
 const refresh = () => {
