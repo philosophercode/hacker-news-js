@@ -1,0 +1,40 @@
+body {
+    background-color: orange;
+    /* color: white; */
+}
+
+.header {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.section {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.url{
+    color: blue;
+    list-style: none;
+}
+
+.time{
+    color: blue;
+    list-style: none;
+}
+
+.score{
+    color: blue;
+    list-style: none;
+}
+
+li {
+    /* list-style: upper-alpha; */
+    margin-left: 20px;
+}
