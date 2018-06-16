@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Hacker News Front-End">
+    <title>Hacker-News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <p class="center-align">
+                    Hacker News vanilla JS
+                </p>
+                <div class="col m1">
+                    <button class="btn btn-primary" onclick="refresh()">Refresh</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h1 class="center-align">Stories</h1>
+                <ul class="left-align" id="stories" style="height: 25vh;overflow-y: scroll;"></ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h1 class="center-align">Article</h1>
+                <div class="center-align" id="article"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/main.js"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+</html>

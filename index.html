@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Hacker News Front-End">
-    <title>Hacker-News</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Hacker News Front-End">
+        <title>Hacker-News</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    </head>
 <body>
-    <div class="row">
-        <div class="col-12 text-center header">Hacker News vanilla JS</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center header">Hacker News vanilla JS</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-center">Stories</h1>
+                <ul class="text-left" id="stories" style="height: 80vh;overflow-y: scroll;"></ul>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-primary" onclick="refresh()">Refresh</button>
+            </div>
+            <div class="col-md-5">
+                <h1 class="text-center">Article</h1>
+                <div id="article"></div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <h1 class="text-center">Stories</h1>
-            <ul class="text-left" id="stories" style="height: 80vh;overflow-y: scroll;"></ul>
-        </div>
-        <div class="col-md-1">
-            <button class="btn btn-primary" onclick="refresh()">Refresh</button>
-        </div>
-        <div class="col-md-5">
-            <h1 class="text-center">Article</h1>
-            <div id="article"></div>
-        </div>
-    </body>
-    <script src="./js/main.js"></script>
+</body>
+<script src="./js/main.js"></script>
 </html>

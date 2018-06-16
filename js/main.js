@@ -77,9 +77,9 @@ const setArticle = (article) => {
     while (articleDiv.firstChild) {
         articleDiv.removeChild(articleDiv.firstChild);
     }
-    let liTitle = document.createElement("li");
-    liTitle.setAttribute('class', 'title');
-    liTitle.innerHTML = article.title;
+    let divTitle = document.createElement("div");
+    divTitle.setAttribute('class', 'title');
+    divTitle.innerHTML = article.title;
 
     let urlIframe = document.createElement("iframe");
     urlIframe.src = article.url;
@@ -89,7 +89,7 @@ const setArticle = (article) => {
 
 
 
-    articleDiv.appendChild(liTitle);
+    articleDiv.appendChild(divTitle);
     articleDiv.appendChild(urlIframe);
 }
 
